@@ -1,0 +1,272 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F1F2F7;
+}
+
+/* Altura do menu e div de foto do usuário */
+.menu, .user-photo{
+    height: 80px;
+}
+
+/* Navbar */
+.menu{
+    background-color: #FFF;
+    padding: 15px 50px;
+    color: #5A5A5A;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0px 3px 6px #00000029;
+    margin-bottom: 70px;
+}
+
+/* Links navbar */
+.menu a{
+    transition: 0.2s ease;
+}
+
+/* Animação links navbar */
+.menu a:hover{
+    color: #FEB712 !important;
+}
+
+/* Cor de fundo do menu */
+.menu-items{
+    background-color: #FFF;
+}
+
+/* Tamanhos dos ícones de notificação no menu */
+.menu-icons{
+    font-size: 24px;
+}
+
+/* Distanciamento entre botões e ícones do menu */
+.menu-icons i, .menu-buttons button{
+    margin-right: 10px;
+}
+
+/* Botões do menu */
+.menu-buttons button{
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    color: #FFF;
+}
+
+/* Botão "Nova Tarefa" */
+.btn-task{
+    background-color: #FEB712;
+    transition: 0.3s ease;
+}
+
+/* Animação do botão "Nova Tarefa" */
+.btn-task:hover{
+    background-color: #FFF;
+    color: #FEB712;
+    border: 1px solid #FEB712;
+}
+
+/* Botão "Sair" */
+.btn-exit{
+    background-color: #B11313;
+    transition: 0.3s ease;
+}
+
+/* Animação botão "Sair" */
+.btn-exit:hover{
+    background-color: #FFF;
+    color: #B11313;
+    border: 1px solid #B11313;
+}
+
+/* Div da foto de usuário */
+.user-photo{
+    width: 72px;
+}
+
+.user-photo img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Áreas de tarefas e usuários */
+.tasks, .users{
+    background-color: #FFF;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+/* Títulos */
+.tasks h3, .users h3{
+    text-transform: uppercase;
+    color: #FEB712;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 31px;
+}
+
+/* Área de tarefas */
+.tasks{
+    float: left;
+    width: 870px;
+}
+
+/* Id e nome da tarefa */
+.task-id, .task-name{
+    font-weight: bold;
+}
+
+/* Retira borda da tabela de tarefas */
+.task-table td, .task-table table{
+    border: none;
+}
+
+/* Linhas da tabela de tarefa */
+.task-table td{
+    border-bottom: 1px solid #F4F4F4;
+    color: #5A5A5A;
+    font-size: 14px;
+    text-align: center;
+    height: 36px;
+    padding: 15px;
+}
+
+/* Status da tarefa */
+.task-table span{
+    width: 70px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #FFF
+}
+
+/* Ícones de status das tarefas */
+.bg-atr{background-color: #B11313;} .bg-dat{background-color: #07812C;} .bg-hj{background-color: #5A5A5A;}
+
+/* Ícones de ações das tarefas */
+.fa-edit, .fa-eye, .fa-ban{
+    transition: 0.2s ease;
+}
+
+.fa-edit{color: #2995D8;} .fa-eye{color: #07812C;} .fa-ban{color: #B11313;}
+
+.fa-edit:hover{color: rgb(122, 204, 255);} .fa-eye:hover{color: rgb(0, 255, 76);} .fa-ban:hover{color: rgb(250, 50, 50);}
+
+/* Ícones do menu */
+.fa-envelope, .fa-bell{color: #5A5A5A; transition: 0.2s ease;}
+
+.fa-envelope:hover, .fa-bell:hover{color: #FEB712;}
+
+/* Área de usuários */
+.users{
+    display: inline-block;
+    width: 270px;
+    margin-left: 30px;
+}
+
+/* Linhas da tabela de usuários */
+.users td{
+    text-align: left;
+    padding: 15px 0px;
+}
+
+.users .td-name{
+    width: 150px;
+}
+
+.users .td-edit{
+    width: 150px;
+}
+
+.users .td-edit i{
+    margin: 5px;
+}
+
+/* Ícone do usuário logado */
+.users span{
+    display: inline;
+    padding: 3px 20px;
+}
+
+/* Media queries */
+
+/* Largura máxima da página em 991px */
+@media screen and (max-width: 991px){
+    .menu, .menu-items, .dashboard{
+        padding: 0;
+    }
+
+    .menu-items{
+        margin: 6px 0px;
+        padding-bottom: 10px;
+        box-shadow: 0px 3px 6px #00000029;
+        z-index: 999;
+    }
+    
+    .menu-items ul, .menu-icons, .menu-buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .user-photo{
+        margin: 0 auto;
+    }
+
+    .tasks, .users{
+        min-width: 100%;
+    }
+
+    .tasks{
+        float: none;
+        display: inline-block;
+    }
+
+    .users{
+        margin: 30px 0px;
+        float: none;
+    }
+
+    .users, .users td{
+        text-align: center;
+    }
+
+    .users .td-name, .users .td-edit{
+        width: auto;
+    }
+}
+
+/* Largura máxima da página em 575px */
+@media screen and (max-width: 575px){
+    .tasks{
+        max-width: 100%;
+    }
+
+    .tasks h3{
+        text-align: center;
+    }
+
+    .tasks td, .tasks tr{
+        display: block;
+        border: none;
+    }
+
+    .tasks tr{
+        border-bottom: 1px solid #F4F4F4;
+        padding-bottom: 10px;
+    }
+}

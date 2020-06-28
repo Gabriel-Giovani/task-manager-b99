@@ -1,0 +1,186 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+html, body{
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F1F2F7;
+}
+
+/* Tela de login */
+.form-area{
+    max-width: 874px;
+    margin-top: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px #00000029;
+    background-color: #FFF;
+}
+
+.logo-area, .login-area{
+    height: 100%;
+}
+
+/* Área do logo Atua */
+.logo-area{
+    float: left;
+    background: url(../img/background/bg-task.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+/* Área de login */
+.login-area{
+    float: right;
+    padding: 40px;
+}
+
+/* Título área de login */
+.login-area h3{
+    color: #FEB712;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.login-area p, .login-area input, .forget-password a{
+    color: #5A5A5A;
+}
+
+/* Campos de texto do formulário */
+.login-area input, .login-area select, .login-area textarea{
+    height: 45px;
+    border: 1px solid #FEB712;
+    box-shadow: 0px 3px #FEB712;
+    border-radius: 12px !important;
+}
+
+.check-adm{
+    box-shadow: none !important;
+    margin-top: -10px;
+}
+
+.login-area label{
+    font-weight: bold;
+}
+
+.form-check-label{
+    font-weight: normal !important;
+
+}
+
+.task-desc{
+    margin-top: 15px;
+}
+
+.login-area textarea{
+    height: 135px;
+}
+
+.footer-form, .btn-form, .forget-password{
+    padding: 0;
+}
+
+/* Div do botão */
+.btn-form{
+    float: right;
+    text-align: right;
+}
+
+/* Div do "Esqueci a senha" */
+.forget-password{
+    display: flex;
+    align-items: center;
+    float: left;
+    height: 47px;
+}
+
+/* Texto "Esqueci a senha" */
+.forget-password a{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: .2s ease;
+}
+
+/* Animação do link ao passar o mouse sobre */
+.forget-password a:hover{
+    color: #000;
+}
+
+/* Botão de acesso */
+
+.btn-access, .btn-cancel{
+    color: #FFF;
+    font-weight: bold;
+    width: 130px;
+    height: 45px;
+    border-radius: 12px;
+    border: none;
+    transition: .3s ease;
+}
+
+.btn-access{
+    background-color: #FEB712;
+}
+
+/* Animação do botão ao passar o mouse sobre */
+.btn-access:hover{
+    color: #FEB712;
+    background-color: #FFF;
+    border: 1px solid #FEB712
+}
+
+.btn-cancel{
+    background-color: red !important;
+}
+
+.btn-cancel:hover{
+    color: red;
+    background-color: #FFF !important;
+    border: 1px solid red;
+}
+
+/* Media queries */
+
+/* Tela com no máximo 767px de largura */
+@media screen and (max-width: 767px){
+    .form-area{
+        margin: 50px;
+    }
+
+    .logo-area{
+        height: 300px;
+        background-size: 80%;
+    }
+
+    .login-area h3{
+        text-align: center;
+    }
+}
+
+/* Tela com no máximo 575px de largura */
+@media screen and (max-width: 575px){
+    .forget-password{
+        float: none;
+        justify-content: center;
+    }
+
+    .btn-form{
+        text-align: center;
+    }
+
+    .login-area p{
+        text-align: center;
+    }
+
+    .logo-area{
+        height: 250px;
+    }
+}
+
+/* Tela com no máximo 375px de largura */
+@media screen and (max-width: 375px){
+    .form-area{
+        padding: 30px;
+    }
+}
