@@ -32,7 +32,6 @@
 <ul>
     <a href="#desc-pjt"><li>Descrição do projeto</li></a>
     <a href="#func"><li>Funcionalidades</li></a>
-    <a href="#demo"><li>Demonstração</li></a>
     <a href="#pre"><li>Pré-requisitos</li></a>
     <a href="#init"><li>Executando o projeto</li></a>
     <a href="#log"><li>Login</li></a>
@@ -65,15 +64,6 @@
     <li>:heavy_check_mark: Gerenciamento das tarefas (criação, visualização, edição e exclusão);</li>
     <li>:heavy_check_mark: Gerenciamento de todas as tarefas de todos os usuários através de administradores.</li>
 </ul>
-
-<br>
-<br>
-
-<h2 align="center" id="demo">:mag_right: Demonstração</h2>
-
-<br>
-
-<p>Caso queira visualizar uma demonstração do projeto, acesso o link: <a href="">LINK</a></p>
 
 <br>
 <br>
