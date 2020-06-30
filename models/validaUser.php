@@ -14,10 +14,14 @@ if((isset($user)) && (isset($password))){
     $result = mysqli_query($link, $sql);
     $resultList = mysqli_fetch_assoc($result);
 
+    $_SESSION['name_user'] = $resultList['name'];
+    $_SESSION['photo_user'] = $resultList['photo'];
+    $_SESSION['admin_user'] = $resultList['admin'];
+
     if(empty($resultList)){
 
         $_SESSION['loginError'] = "Usuário ou senha inválido(a)";
-	    header("Location: ../views/login.php");
+	    header("Location: ../index.php");
 
     }
     
@@ -36,16 +40,12 @@ if((isset($user)) && (isset($password))){
 
         }
 
-        $_SESSION['name_user'] = $resultList['name'];
-        $_SESSION['photo_user'] = $resultList['photo'];
-        $_SESSION['admin_user'] = $resultList['admin'];
-
     }
 
     else{
 
         $_SESSION['loginError'] = "Usuário ou senha inválido(a)";
-	    header("Location: ../views/login.php");    
+	    header("Location: ../index.php");    
 
     }
 
@@ -54,6 +54,6 @@ if((isset($user)) && (isset($password))){
 else{
 
     $_SESSION['loginError'] = "Usuário ou senha inválido(a)";
-	header("Location: ../views/login.php");
+	header("Location: ../index.php");
 
 }
